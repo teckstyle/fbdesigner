@@ -1,79 +1,301 @@
+
 <!DOCTYPE html>
 <html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Mug Designer - TeckStyle.co.uk</title>
+  
+    
+  <link rel="stylesheet" type="text/css" href="http://www.teckstyle.comuf.com/tsfonts/style.css" media="screen" />
+  
+  <style type='text/css'>
+    #wrap {
+    width:534px;
+}
+#bg {
+    margin: 0px auto;
+    margin-bottom:40px;
+    width:500px;
+    height:236px;
+    background-image:url(http://teckstyle.co.uk/communities/3/004/012/270/953//images/4608796042.jpg);
+}
+#container {
+    position:absolute;
+    width:400px;
+    height:167px;
+    margin:44px 6px;
+    border: 1px solid #ff0000;
+    -webkit-border-radius: 5px;
+    border-radius: 4px;
+    -moz-border-radius:4px;
+    -khtml-border-radius:4px;
+    -moz-box-shadow: 3px 3px 8px #222;
+    -webkit-box-shadow: 3px 3px 8px #222;
+    box-shadow: 3px 3px 8px #222;
+}
+form {
+    width:534px;
+    margin-left:0px;
+}
+fieldset {
+    float:left;
+    width:250px;
+    margin-bottom:5px;
+    padding:5px;
+    border:1px solid #000000;
+    -webkit-border-radius: 5px;
+    border-radius: 4px;
+    -moz-border-radius:4px;
+    -khtml-border-radius:4px;
+}
+::-webkit-input-placeholder {
+    color: red;
+}
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: red;
+}
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: red;
+}
+:-ms-input-placeholder {
+    color: red;
+}
+  </style>
+  
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Fbdesigner : " />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Fbdesigner</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/teckstyle/fbdesigner">View on GitHub</a>
-
-          <h1 id="project_title">Fbdesigner</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/teckstyle/fbdesigner/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/teckstyle/fbdesigner/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Fbdesigner maintained by <a href="https://github.com/teckstyle">teckstyle</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
+      <script type='text/javascript' src="http://orm-other.s3.amazonaws.com/jscolor/jscolor.js"></script>
+      <script type='text/javascript' src="http://www.teckstyle.comuf.com/kinetic.js"></script>
     
 
-  </body>
+<script type='text/javascript'>//<![CDATA[ 
+window.onload=function(){
+var stage = new Kinetic.Stage({
+    container: 'container',
+    width: 400,
+    height: 167
+});
+
+var layer = new Kinetic.Layer();
+
+
+//image loader
+var imageLoader = document.getElementById('imageLoader');
+imageLoader.addEventListener('change', handleImage, false);
+
+function handleImage(e) {
+    var reader = new FileReader();
+    reader.onload = function (event) {
+        var img = new Image();
+        img.onload = function () {
+            layer.add(new Kinetic.Image({
+                x: 100,
+                y: 50,
+                image: img,
+                width: 200,
+                height: 130,
+                draggable: true
+            }));
+            text.moveToTop();
+            stage.draw();
+        };
+        console.log(event);
+        img.src = event.target.result;
+    };
+    reader.readAsDataURL(e.target.files[0]);
+}
+
+
+var text = new Kinetic.Text({
+    x: 10,
+    y: 50,
+    fontSize: '30',
+    fontFamily: 'arial',
+    fill: '#ff0000',
+    stroke: 'none',
+    shadowOpacity: '0',
+    shadowOffsetX: '2',
+    shadowOffsetY: '2',
+    shadowColor: '#707070',
+    wrap: 'word',
+    height: 'auto',
+    draggable: true
+});
+
+stage.add(layer);
+layer.add(text);
+
+document.getElementById("textBox").addEventListener("keyup", function () {
+    text.setText(this.value);
+    layer.draw();
+}, true);
+
+document.getElementById("textSize").addEventListener("change", function () {
+    var size = this.value;
+    text.fontSize(size);
+    layer.draw();
+}, true);
+
+document.getElementById("fontFamily").addEventListener("change", function () {
+    var font = this.value;
+    text.fontFamily(font);
+    layer.draw();
+}, true);
+
+document.getElementById("fontStyle").addEventListener("change", function () {
+    var style = this.value;
+    text.fontStyle(style);
+    layer.draw();
+}, true);
+
+document.getElementById("fill").addEventListener("change", function () {
+    var colour = this.value;
+    text.fill(colour);
+    layer.draw();
+}, true);
+
+document.getElementById("stroke").addEventListener("change", function () {
+    var stroke = this.value;
+    text.stroke(stroke);
+    layer.draw();
+}, false);
+
+document.getElementById("strokeColor").addEventListener("change", function () {
+    var stroke = this.value;
+    text.stroke(stroke);
+    layer.draw();
+}, true);
+
+document.getElementById("strokeWidth").addEventListener("change", function () {
+    var strokeWidth = this.value;
+    text.strokeWidth(strokeWidth);
+    layer.draw();
+}, true);
+
+document.getElementById("shadowOpacity").addEventListener("change", function () {
+    var shadowOpacity = this.value;
+    text.shadowOpacity(shadowOpacity);
+    layer.draw();
+}, false);
+
+document.getElementById("shadowOffsetX").addEventListener("change", function () {
+    var shadowOffsetX = this.value;
+    text.shadowOffsetX(shadowOffsetX);
+    layer.draw();
+}, true);
+
+document.getElementById("shadowOffsetY").addEventListener("change", function () {
+    var shadowOffsetY = this.value;
+    text.shadowOffsetY(shadowOffsetY);
+    layer.draw();
+}, true);
+
+document.getElementById("shadowColor").addEventListener("change", function () {
+    var shadowColor = this.value;
+    text.shadowColor(shadowColor);
+    layer.draw();
+}, true);
+
+
+$("#canvas").mousedown(function (e) {
+    handleMouseDown(e);
+});
+$("#canvas").mousemove(function (e) {
+    handleMouseMove(e);
+});
+$("#canvas").mouseup(function (e) {
+    handleMouseUp(e);
+});
+$("#canvas").mouseout(function (e) {
+    handleMouseOut(e);
+});
+
+// utility
+function cl() {
+    console.log.apply(console, arguments);
+}
+}//]]>  
+
+</script>
+
+
+</head>
+<body>
+
+<div id="wrap">
+    <div id="bg" style="">
+        <div id="container"></div>
+    </div>
+    <form>
+        <fieldset>
+            <input type="text" id="textBox" placeholder="Type Your Text Here">
+            <br>Text Size:
+            <input type="range" id="textSize" min="6" max="220" step="1" value="30" />
+            <br>Text Color:
+            <input class="color" id="fill" value="#ff0000" />
+            <br>
+            <br>Font Type:
+            <select id="fontFamily">
+<option value="arial">arial</option>
+<option value="arizonia">arizonia</option>
+<option value="blackcasper">blackcasper</option>
+                <option value="blackout midnight">blackout midnight</option>
+                <option value="blackout sunrise">blackout sunrise</option>
+                <option value="crud">crud</option>
+                <option value="destroy">destroy</option>
+                <option value="district">district</option>
+                <option value="fearless">fearless</option>
+                <option value="georgia">georgia</option>
+                <option value="harabarahand">harabarahand</option>
+                <option value="hornswoggled">hornswoggled</option>
+                <option value="kids">kids</option>
+                <option value="monospace">monospace</option>
+                <option value="Monotype Corsiva">Monotype Corsiva</option>
+                <option value="paulmaul">paulmaul</option>
+                <option value="qwigley">qwigley</option>
+                <option value="rabiohead">rabiohead</option>
+                <option value="rapscallion">rapscallion</option>
+                <option value="times new roman">times</option>
+                <option value="vanilla">vanilla</option>
+                <option value="windsong">windsong</option>
+                <option value="zenda">zenda</option>
+            </select>
+            <br>Font Style:
+            <select id="fontStyle">
+                <option value="normal">normal</option>
+                <option value="italic">italic</option>
+                <option value="bold">bold</option>
+            </select>
+            <br>Outline:
+            <select id="stroke">
+                <option value="none">none</option>
+                <option value="true">outline</option>
+            </select>
+            <br>
+            <input class="color" id="strokeColor" value="#000000" />
+            <br>
+            <input type="range" id="strokeWidth" min="0.1" max="15" step="0.01" value="2" />
+        </fieldset>
+        <fieldset>
+            <input type="file" id="imageLoader" name="imageLoader" />
+        </fieldset>
+        <fieldset>
+            <br>Shadow:
+            <select id="shadowOpacity">
+                <option value="0">none</option>
+                <option value="1">shadow</option>
+            </select>
+            <br>Shadow X:
+            <input type="range" id="shadowOffsetX" min="-30" max="30" step="1" value="1" />
+            <br>Shadow Y:
+            <input type="range" id="shadowOffsetY" min="-30" max="30" step="1" value="1" />
+            <br>Shadow Color:
+            <input class="color" id="shadowColor" value="#707070" />
+        </fieldset>
+    </form>
+</div>
+  
+</body>
 </html>
+
